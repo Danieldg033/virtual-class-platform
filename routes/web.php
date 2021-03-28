@@ -20,4 +20,5 @@ Route::view('/about', 'about')->name('about');
 Route::view('/contact', 'contact')->name('contact');
 
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
+
 // // Auth::register('');
