@@ -16,4 +16,7 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .webpackConfig({
         output: { chunkFilename: 'js/[name].js?id=[chunkhash]'}
-    });
+    })
+    .postCss("resources/css/app.css", "public/css", [
+        require("tailwindcss"),
+    ]);
